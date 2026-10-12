@@ -54,11 +54,30 @@ function videoGroups(p){
 function socialListing(){
  document.body.className='listing social';const projects=PROJECTS.filter(p=>p.category==='social');
  $('#main').innerHTML=`<section class="page-intro"><div class="eyebrow">${T('SELECTED WORK','精选作品')} / 03</div><h1>${T('Social Media','社交媒体')}<span class="project-count">(03)</span></h1><p>${T('Select a brand to explore the work.','点击品牌，查看作品。')}</p></section><div class="brand-accordions">${projects.map((p,i)=>`<details class="brand-accordion" id="brand-${p.id}"><summary aria-controls="brand-content-${p.id}" aria-expanded="false"><span class="eyebrow">0${i+1}</span><h2 class="${p.logo?'brand-logo-heading':''}">${p.logo?`<span class="brand-logo"><img src="${A(p.logo)}" alt="${p.title}"></span>`:p.title}</h2><span class="brand-toggle-label"><span class="when-closed">${T('View work','查看作品')}</span><span class="when-open">${T('Close','收起')}</span></span></summary><div class="brand-content" id="brand-content-${p.id}"><div class="brand-summary"><p class="role">${B(p.role)}</p>${p.performance?`<div class="brand-performance"><p>${T('Selected content · overall performance','精选内容 · 整体表现')}</p><ul class="video-metrics">${p.performance.map(m=>`<li>${B(m)}</li>`).join('')}</ul><p class="metrics-source">${T('Performance recorded in portfolio','作品集记录数据')}</p></div>`:''}${p.gallery.length?`<a class="brand-details" href="${projectURL(p.id)}">${T('Project & stills','项目详情与图文')}</a>`:''}</div><div class="brand-films">${videoGroups(p)}</div></div></details>`).join('')}</div><a class="next-chapter" href="index.html"><span>${T('BACK TO','返回')}</span><strong>${T('Cover','封面')}</strong></a>`;
- document.querySelectorAll('.brand-accordion').forEach(panel=>panel.addEventListener('toggle',()=>{
-  panel.querySelector('summary').setAttribute('aria-expanded',String(panel.open));
-  if(panel.open)document.querySelectorAll('.brand-accordion').forEach(other=>{if(other!==panel){other.open=false;other.querySelectorAll('video').forEach(v=>v.pause())}});
-  else panel.querySelectorAll('video').forEach(v=>v.pause());
- }));
+ const panels=[...document.querySelectorAll('.brand-accordion')];
+ const animations=new WeakMap(),targets=new WeakMap();
+ function expand(panel,open){
+  const summary=panel.querySelector('summary'),content=panel.querySelector('.brand-content');
+  const from=panel.getBoundingClientRect().height;
+  animations.get(panel)?.cancel();targets.set(panel,open);
+  summary.setAttribute('aria-expanded',String(open));content.inert=!open;
+  if(!open)panel.querySelectorAll('video').forEach(v=>v.pause());
+  panel.open=true;panel.style.height='';
+  const to=open?panel.getBoundingClientRect().height:summary.getBoundingClientRect().height+parseFloat(getComputedStyle(panel).borderTopWidth)+parseFloat(getComputedStyle(panel).borderBottomWidth);
+  const finish=()=>{panel.open=open;panel.style.overflow='';panel.style.height='';animations.delete(panel)};
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){finish();return}
+  panel.style.overflow='hidden';
+  const animation=panel.animate([{height:from+'px'},{height:to+'px'}],{duration:480,easing:'cubic-bezier(.22,1,.36,1)'});
+  animations.set(panel,animation);animation.onfinish=finish;
+ }
+ panels.forEach(panel=>{
+  targets.set(panel,false);panel.querySelector('.brand-content').inert=true;
+  panel.querySelector('summary').addEventListener('click',event=>{
+   event.preventDefault();const open=!targets.get(panel);
+   if(open)panels.forEach(other=>{if(other!==panel&&targets.get(other))expand(other,false)});
+   expand(panel,open);
+  });
+ });
 }
 
 function render(){document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.title='Charon Zhang — '+T('Film & Visual Stories','影像作品集');navigation();if(page==='index')home();else if(page==='project')detail();else if(page==='social')socialListing();else listing();document.querySelectorAll('video').forEach(v=>v.addEventListener('play',()=>document.querySelectorAll('video').forEach(other=>{if(other!==v)other.pause()})))}

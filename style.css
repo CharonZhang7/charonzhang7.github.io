@@ -64,3 +64,29 @@ img[src$="huawei-logo.png"]{filter:brightness(0) invert(1)}
 .cover-flow{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0;transition:opacity 1s}
 .cover-flow.ready{opacity:1}
 @media(prefers-reduced-motion:reduce){.cover-flow{display:none}}
+
+/* Quiet project interactions: stable frames, a small camera push and fine rules. */
+.listing .image-link img,.cinematic-panel .chapter-visual img{transition:transform 1.1s cubic-bezier(.22,1,.36,1),filter .65s ease}
+.listing .image-link:hover img{transform:none;filter:none}
+.card-top h2 a,.chapter-heading h2 a,.home .chapters a{background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:left bottom;background-size:0 1px;padding-bottom:5px;transition:background-size .55s cubic-bezier(.22,1,.36,1),opacity .3s}
+.project-card .role{transition:color .5s ease}
+.social .brand-accordion{box-sizing:border-box}
+.social .brand-accordion summary .brand-logo{opacity:.82;transition:opacity .45s ease}
+.social .brand-accordion summary[aria-expanded=true] .brand-logo{opacity:1}
+.social .brand-accordion summary[aria-expanded=false] .when-open{display:none}
+.social .brand-accordion summary[aria-expanded=false] .when-closed{display:inline}
+.social .brand-accordion summary[aria-expanded=true] .when-open{display:inline}
+.social .brand-accordion summary[aria-expanded=true] .when-closed{display:none}
+@media(hover:hover) and (pointer:fine){
+ .listing .project-card:hover .image-link img{transform:scale(1.035);filter:brightness(1.06)}
+ .listing .project-card:hover .card-top h2 a,.home .chapters a:hover,.chapter-heading h2 a:hover{background-size:100% 1px}
+ .project-card:hover .role{color:#fff}
+ .cinematic-panel:has(.chapter-visual:hover) .chapter-visual img,.cinematic-panel:has(.chapter-heading a:hover) .chapter-visual img{transform:scale(1.025)}
+ .social .brand-accordion summary:hover .brand-logo{opacity:1}
+}
+.card-top h2 a:focus-visible,.home .chapters a:focus-visible,.chapter-heading h2 a:focus-visible{background-size:100% 1px}
+.project-card:focus-within .image-link img{transform:scale(1.035)}
+@media(prefers-reduced-motion:reduce){
+ .listing .image-link img,.cinematic-panel .chapter-visual img,.card-top h2 a,.chapter-heading h2 a,.home .chapters a,.project-card .role,.social .brand-accordion summary .brand-logo{transition:none}
+ .listing .project-card .image-link img,.cinematic-panel .chapter-visual img{transform:none!important}
+}
