@@ -49,6 +49,7 @@ function detail(){
 
 function platformMetrics(l){
  const m=l.xiaohongshu;if(!m)return '';
+ if(m.showMetrics===false)return `<p class="metrics-source"><a href="${m.url}" target="_blank" rel="noopener noreferrer">${T('View post on Xiaohongshu','在小红书查看原帖')}</a></p>`;
  const count=value=>lang==='zh'?value:(value.includes('万')?`${Number(value.replace('万',''))*10}K`:Number(value).toLocaleString('en-GB'));
  return `<div class="platform-metrics"><ul class="video-metrics"><li>${count(m.likes)} ${T('likes','点赞')}</li><li>${count(m.saves)} ${T('saves','收藏')}</li><li>${count(m.comments)} ${T('comments','评论')}</li></ul><p class="metrics-source"><a href="${m.url}" target="_blank" rel="noopener noreferrer">${T('Xiaohongshu · View post','小红书 · 查看原帖')}</a> · ${m.checkedAt}</p></div>`;
 }

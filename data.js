@@ -469,7 +469,8 @@ const PROJECTS = [
           "checkedAt": "2026-10-14",
           "likes": "2.1万",
           "saves": "1.2万",
-          "comments": "490"
+          "comments": "490",
+          "showMetrics": true
         }
       },
       {
@@ -506,7 +507,8 @@ const PROJECTS = [
           "checkedAt": "2026-10-14",
           "likes": "3.7万",
           "saves": "1.2万",
-          "comments": "3736"
+          "comments": "3736",
+          "showMetrics": true
         }
       },
       {
@@ -528,7 +530,8 @@ const PROJECTS = [
           "checkedAt": "2026-10-14",
           "likes": "742",
           "saves": "54",
-          "comments": "48"
+          "comments": "48",
+          "showMetrics": false
         }
       },
       {
@@ -550,7 +553,8 @@ const PROJECTS = [
           "checkedAt": "2026-10-14",
           "likes": "86",
           "saves": "16",
-          "comments": "26"
+          "comments": "26",
+          "showMetrics": false
         }
       },
       {
@@ -572,7 +576,8 @@ const PROJECTS = [
           "checkedAt": "2026-10-14",
           "likes": "55",
           "saves": "10",
-          "comments": "13"
+          "comments": "13",
+          "showMetrics": false
         }
       },
       {
@@ -594,7 +599,8 @@ const PROJECTS = [
           "checkedAt": "2026-10-14",
           "likes": "48",
           "saves": "13",
-          "comments": "8"
+          "comments": "8",
+          "showMetrics": false
         }
       }
     ],
@@ -649,7 +655,8 @@ const PROJECTS = [
           "checkedAt": "2026-10-14",
           "likes": "67",
           "saves": "25",
-          "comments": "6"
+          "comments": "6",
+          "showMetrics": false
         }
       }
     ],
