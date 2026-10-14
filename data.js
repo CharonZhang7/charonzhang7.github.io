@@ -1,4 +1,4 @@
-window.PROJECTS = [
+const PROJECTS = [
   {
     "id": "vogueman",
     "category": "commercial",
@@ -462,7 +462,15 @@ window.PROJECTS = [
             "zh": "7.84% 互动率"
           }
         ],
-        "metricsSource": "Work Portfolio, page 6"
+        "metricsSource": "Work Portfolio, page 6",
+        "xiaohongshu": {
+          "url": "https://www.xiaohongshu.com/explore/6a6195f7000000000100caa2?xsec_token=AB1b-EzzmH4yU55zCoXS3INtlNkIpC9VodiAmN0_CX7Ow=&xsec_source=pc_user",
+          "title": "谢谢，这下凉爽多了😎",
+          "checkedAt": "2026-10-14",
+          "likes": "2.1万",
+          "saves": "1.2万",
+          "comments": "490"
+        }
       },
       {
         "url": "https://onedrive.live.com/?viewid=7fd33d56%2D7803%2D41ea%2Daa3f%2D55c03fe5bc9c&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy8xM2I5YjU5NjI5YTRmMDhkL0lnQnJIcjJMUW92SlJKNk5LTk5uaTRiUkFYX2VEN3hyWXN1SVNFUktnWWhvMnFvP2U9eVZYMHg2&ga=1&id=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments%2FCharon%2DSocial%20Media%20Video%2FCoke%2Dtop%20performer%20in%20August%2EMP4&listurl=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments&parent=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments%2FCharon%2DSocial%20Media%20Video",
@@ -491,7 +499,15 @@ window.PROJECTS = [
             "zh": "4.5 万+ 互动"
           }
         ],
-        "metricsSource": "Work Portfolio, page 6"
+        "metricsSource": "Work Portfolio, page 6",
+        "xiaohongshu": {
+          "url": "https://www.xiaohongshu.com/explore/6a852ac8000000002403c3e1?xsec_token=ABdSo0cEqasUk8C159zK6p2VhvczTzBYFyLkdC325Ielc=&xsec_source=pc_user",
+          "title": "我喝爽了就这样",
+          "checkedAt": "2026-10-14",
+          "likes": "3.7万",
+          "saves": "1.2万",
+          "comments": "3736"
+        }
       },
       {
         "url": "https://onedrive.live.com/?viewid=7fd33d56%2D7803%2D41ea%2Daa3f%2D55c03fe5bc9c&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy8xM2I5YjU5NjI5YTRmMDhkL0lnQnJIcjJMUW92SlJKNk5LTk5uaTRiUkFYX2VEN3hyWXN1SVNFUktnWWhvMnFvP2U9eVZYMHg2&ga=1&id=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments%2FCharon%2DSocial%20Media%20Video%2FCoke%20FIFA%2EMP4&listurl=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments&parent=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments%2FCharon%2DSocial%20Media%20Video",
@@ -505,7 +521,15 @@ window.PROJECTS = [
         },
         "duration": "0:07",
         "video": "videos/coca-cola-3.mp4",
-        "poster": "videos/coca-cola-3.jpg"
+        "poster": "videos/coca-cola-3.jpg",
+        "xiaohongshu": {
+          "url": "https://www.xiaohongshu.com/explore/6a5763d0000000001700aa30?xsec_token=ABQ_KVJC3VCTJn3S0ksM3UNa_yOR689PrNhApuIuts4CE=&xsec_source=pc_user",
+          "title": "帮他们进个球吧！🏃",
+          "checkedAt": "2026-10-14",
+          "likes": "742",
+          "saves": "54",
+          "comments": "48"
+        }
       },
       {
         "url": "https://onedrive.live.com/?viewid=7fd33d56%2D7803%2D41ea%2Daa3f%2D55c03fe5bc9c&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy8xM2I5YjU5NjI5YTRmMDhkL0lnQnJIcjJMUW92SlJKNk5LTk5uaTRiUkFYX2VEN3hyWXN1SVNFUktnWWhvMnFvP2U9eVZYMHg2&ga=1&id=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments%2FCharon%2DSocial%20Media%20Video%2FCoke%20FIFA2%2EMP4&listurl=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments&parent=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments%2FCharon%2DSocial%20Media%20Video",
@@ -519,7 +543,15 @@ window.PROJECTS = [
         },
         "duration": "0:10",
         "video": "videos/coca-cola-4.mp4",
-        "poster": "videos/coca-cola-4.jpg"
+        "poster": "videos/coca-cola-4.jpg",
+        "xiaohongshu": {
+          "url": "https://www.xiaohongshu.com/explore/6a5aee38000000000301d6ed?xsec_token=ABjN3tzqnbPW1s3tzayODysX7rVsfVQvv_iCFE0ZlpzJc=&xsec_source=pc_user",
+          "title": "截图挑战！谁将夺下C位？😏",
+          "checkedAt": "2026-10-14",
+          "likes": "86",
+          "saves": "16",
+          "comments": "26"
+        }
       },
       {
         "url": "https://onedrive.live.com/?viewid=7fd33d56%2D7803%2D41ea%2Daa3f%2D55c03fe5bc9c&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy8xM2I5YjU5NjI5YTRmMDhkL0lnQnJIcjJMUW92SlJKNk5LTk5uaTRiUkFYX2VEN3hyWXN1SVNFUktnWWhvMnFvP2U9eVZYMHg2&ga=1&id=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments%2FCharon%2DSocial%20Media%20Video%2FCoke%202026%2E9%2Emp4&listurl=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments&parent=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments%2FCharon%2DSocial%20Media%20Video",
@@ -533,7 +565,15 @@ window.PROJECTS = [
         },
         "duration": "0:05",
         "video": "videos/coca-cola-2.mp4",
-        "poster": "videos/coca-cola-2.jpg"
+        "poster": "videos/coca-cola-2.jpg",
+        "xiaohongshu": {
+          "url": "https://www.xiaohongshu.com/explore/6ab3a3920000000018005ed1?xsec_token=ABBcPKcqSSO5OYBmqFNr818cXUluotyB0pKpODTzS3Z3o=&xsec_source=pc_user",
+          "title": "要去和ta一起碰一杯日落吗？🌅",
+          "checkedAt": "2026-10-14",
+          "likes": "55",
+          "saves": "10",
+          "comments": "13"
+        }
       },
       {
         "url": "https://onedrive.live.com/?viewid=7fd33d56%2D7803%2D41ea%2Daa3f%2D55c03fe5bc9c&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy8xM2I5YjU5NjI5YTRmMDhkL0lnQnJIcjJMUW92SlJKNk5LTk5uaTRiUkFYX2VEN3hyWXN1SVNFUktnWWhvMnFvP2U9eVZYMHg2&ga=1&id=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments%2FCharon%2DSocial%20Media%20Video%2FCode%20on%2C%20Coke%20on%2EMP4&listurl=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments&parent=%2Fpersonal%2F13b9b59629a4f08d%2FDocuments%2FCharon%2DSocial%20Media%20Video",
@@ -547,7 +587,15 @@ window.PROJECTS = [
         },
         "duration": "0:03",
         "video": "videos/coca-cola-1.mp4",
-        "poster": "videos/coca-cola-1.jpg"
+        "poster": "videos/coca-cola-1.jpg",
+        "xiaohongshu": {
+          "url": "https://www.xiaohongshu.com/explore/6a94fe3d000000001803f86e?xsec_token=ABmjT5T1pH1jgZcmLRrM6IfIAK50e-ZrXK_YjLRuFk0co=&xsec_source=pc_user",
+          "title": "Code on, Coke on",
+          "checkedAt": "2026-10-14",
+          "likes": "48",
+          "saves": "13",
+          "comments": "8"
+        }
       }
     ],
     "runtime": "",
@@ -594,7 +642,15 @@ window.PROJECTS = [
         },
         "duration": "0:15",
         "video": "videos/kpro-1.mp4",
-        "poster": "videos/kpro-1.jpg"
+        "poster": "videos/kpro-1.jpg",
+        "xiaohongshu": {
+          "url": "https://www.xiaohongshu.com/explore/6a83fa930000000025005e62?xsec_token=ABc-f_JMPgdfBaVQUZaRgORK6C9XS7bXVvQcLEGSPWA_4=&xsec_source=pc_user",
+          "title": "您好，来一杯维C大调的橙色交响乐👇",
+          "checkedAt": "2026-10-14",
+          "likes": "67",
+          "saves": "25",
+          "comments": "6"
+        }
       }
     ],
     "runtime": "",

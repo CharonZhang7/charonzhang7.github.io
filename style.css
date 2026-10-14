@@ -90,3 +90,5 @@ img[src$="huawei-logo.png"]{filter:brightness(0) invert(1)}
  .listing .image-link img,.cinematic-panel .chapter-visual img,.card-top h2 a,.chapter-heading h2 a,.home .chapters a,.project-card .role,.social .brand-accordion summary .brand-logo{transition:none}
  .listing .project-card .image-link img,.cinematic-panel .chapter-visual img{transform:none!important}
 }
+
+.platform-metrics{margin-top:16px;padding-bottom:13px;border-bottom:1px solid #222}.platform-metrics .video-metrics{color:#eee}.platform-metrics .metrics-source a{text-underline-offset:3px}.platform-metrics .metrics-source a:hover{text-decoration:underline}
