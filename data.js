@@ -178,8 +178,8 @@ const PROJECTS = [
       "zh": "剧情短片"
     },
     "role": {
-      "en": "Director / Screenwriter / Art Director",
-      "zh": "导演 / 编剧 / 美术指导"
+      "en": "Director / Screenwriter / Art Director / Editor",
+      "zh": "导演 / 编剧 / 美术指导 / 剪辑"
     },
     "image": "skein-cover.jpg",
     "description": {
@@ -218,8 +218,8 @@ const PROJECTS = [
       "zh": "实验影像"
     },
     "role": {
-      "en": "Director of Photography / Sound Designer / Recordist",
-      "zh": "摄影指导 / 声音设计 / 录音师"
+      "en": "Director of Photography / Sound Designer / Recordist / Editor",
+      "zh": "摄影指导 / 声音设计 / 录音师 / 剪辑"
     },
     "image": "personal-3-1.jpg",
     "description": {
