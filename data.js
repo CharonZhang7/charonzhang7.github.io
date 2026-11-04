@@ -168,7 +168,8 @@ const PROJECTS = [
       "work-2-5-hd.jpg"
     ],
     "own": false,
-    "imageOnly": true
+    "imageOnly": true,
+    "titleZh": "华为坤灵"
   },
   {
     "id": "skein",
