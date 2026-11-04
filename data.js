@@ -137,7 +137,8 @@ const PROJECTS = [
       "work-3-1-hd.jpg",
       "work-3-4-hd.jpg"
     ],
-    "own": false
+    "own": false,
+    "titleZh": "电影劳动"
   },
   {
     "id": "huawei",
@@ -207,7 +208,8 @@ const PROJECTS = [
       }
     ],
     "gallery": [],
-    "own": true
+    "own": true,
+    "titleZh": "脐带"
   },
   {
     "id": "still",
@@ -241,7 +243,8 @@ const PROJECTS = [
       "personal-3-2-hd.jpg",
       "personal-3-3-hd.jpg"
     ],
-    "own": false
+    "own": false,
+    "titleZh": "静止"
   },
   {
     "id": "nexus-error",

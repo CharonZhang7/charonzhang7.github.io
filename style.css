@@ -92,3 +92,5 @@ img[src$="huawei-logo.png"]{filter:brightness(0) invert(1)}
 }
 
 .platform-metrics{margin-top:16px;padding-bottom:13px;border-bottom:1px solid #222}.platform-metrics .video-metrics{color:#eee}.platform-metrics .metrics-source a{text-underline-offset:3px}.platform-metrics .metrics-source a:hover{text-decoration:underline}
+
+.title-en{display:block;font-family:inherit;font-weight:400;letter-spacing:.04em;color:var(--muted)}.card-top h2 .title-en{font-size:11px;margin-top:7px}.film-header h1 .title-en{font-size:.3em;margin-top:.55em}
