@@ -157,7 +157,15 @@ const PROJECTS = [
       "en": "Three scenario-based B2B commercials, made across three locations over four shooting days. From location scouting and on-set coordination to editing support and final delivery.",
       "zh": "场景化 B2B 品牌广告：4 天拍摄、3 个场地、3 条成片。参与勘景、拍摄准备、现场协调、素材整理、剪辑辅助与后期交付。"
     },
-    "links": [],
+    "links": [
+      {
+        "url": "https://weixin.qq.com/sph/AZqw3gHko2",
+        "label": {
+          "en": "Film 01",
+          "zh": "视频 01"
+        }
+      }
+    ],
     "runtime": "",
     "selection": [],
     "gallery": [
@@ -168,7 +176,6 @@ const PROJECTS = [
       "work-2-5-hd.jpg"
     ],
     "own": false,
-    "imageOnly": true,
     "titleZh": "华为坤灵"
   },
   {
